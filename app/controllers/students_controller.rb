@@ -1,4 +1,5 @@
 class StudentsController < ApplicationController
+  expose :students, ->{ Student.all }
   expose(:student, attributes: :student_params)
   expose(:student_subject_items) { student.subject_items }
 

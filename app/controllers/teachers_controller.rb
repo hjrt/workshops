@@ -3,7 +3,9 @@ class TeachersController < ApplicationController
 
   expose :teachers, ->{ Teacher.all }
   expose(:teacher, attributes: :teacher_params)
-  expose(:subject_items) { teacher.subject_items }
+  expose(:teacher_subject_items) { teacher.subject_items }
+  expose(:subject_items) { SubjectItem.all}
+
 
   def create
     if teacher.save

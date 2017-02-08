@@ -1,0 +1,15 @@
+%tr
+  %td= student_payment.student.decorate.full_name
+  %td= student_payment.paid
+  %td= student_payment.date
+  %td= student_payment.value
+  %td
+    = link_to student_payment_path(student_payment), { title: t('shared.show') } do
+      %button.btn.btn-default
+        = fa_icon "search"
+    = link_to edit_student_payment_path(student_payment), { title: t('shared.edit') } do
+      %button.btn.btn-default
+        = fa_icon "edit"
+    = link_to student_payment_path(student_payment), { method: :delete, title: t('shared.delete') } do
+      %button.btn.btn-default
+        = fa_icon "times"

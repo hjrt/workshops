@@ -12,5 +12,7 @@ Rails.application.routes.draw do
     get :subjects
   end
 
+  resources :student_payments
+
   get 'report/subjects', to: 'reports#subjects'
 end

@@ -34,3 +34,9 @@ en:
       full_name: Full name
       birthdate: Birthdate
       avg_notes: Notes average
+  student_payment:
+    columns:
+      student: student
+      paid: paid
+      value: value
+      date: date

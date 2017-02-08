@@ -1,7 +1,7 @@
 class StudentsController < ApplicationController
   before_action :authenticate_user!
   
-  expose :students, ->{ Student.all }
+  expose(:students) { Student.all }
   expose(:student)
   expose(:student_subject_items) { student.subject_items }
 

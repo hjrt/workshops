@@ -40,4 +40,10 @@ SubjectItem.all.each do |subject_item|
   end
 end
 
+Student.all.each do |student|
+  rand(1..5).times do
+    StudentPayment.create(value: rand(200..2000), paid: Faker::Boolean.boolean, date: Faker::Date.backward(rand(1...500)), student: student)
+  end
+end
+
 puts "Seeds: done"

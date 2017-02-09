@@ -21,7 +21,7 @@ end
 25.times do
   Student.create!(
     first_name: Faker::Name.first_name,
-    last_name: Faker::Name.last_name
+    last_name: Faker::Name.last_name,
     birthdate: Faker::Date.backward(rand(1...500))
   )
 end

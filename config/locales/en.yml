@@ -1,4 +1,6 @@
 en:
+  :true: 'Yes'
+  :false: 'No'
   navbar:
     students: Students
     teachers: Teachers

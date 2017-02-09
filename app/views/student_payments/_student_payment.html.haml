@@ -1,6 +1,6 @@
 %tr
   %td= student_payment.student.decorate.full_name
-  %td= student_payment.paid
+  %td= humanize_boolean(student_payment.paid)
   %td= student_payment.date
   %td= student_payment.value
   %td

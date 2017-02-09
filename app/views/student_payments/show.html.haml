@@ -6,7 +6,7 @@
       %td= student_payment.student.decorate.full_name
     %tr
       %td= "#{t('student_payment.columns.paid')}:"
-      %td= student_payment.paid
+      %td= humanize_boolean(student_payment.paid)
     %tr
       %td= "#{t('student_payment.columns.date')}:"
       %td= student_payment.date
